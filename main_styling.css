@@ -1,0 +1,80 @@
+.header {
+    background-color: rgb(25, 43, 83);
+    display: flex; justify-content: center;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+.menu {
+    background-color: rgb(197, 219, 219);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.sub-menu {
+    display: flex;
+    column-gap: 20px;
+    background-color: transparent;
+}
+.home_button > a, .inventory_open > a {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+}
+    .home_button > a:hover, .inventory_open > a:hover {
+        background-color: rgb(25, 43, 83);
+        color: white;
+    }
+.logout_button > input {
+    padding: 5px 12px;
+    border: none; border-radius: 5px;
+    background-color: rgb(25, 43, 83);    
+    color: white;
+    cursor: pointer;     
+}
+.dropbtn {
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 5px 16px;
+}
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: rgb(25, 43, 83);
+        color: white;
+    }
+    .inventory_category_menu {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(197, 219, 219);
+        min-width: 160px;
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 6px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {background-color: rgb(25, 43, 83); color: white;}
+    .show {display:block;}
+
+.container {
+    background-color: white;
+    width: 100%;
+    min-height: 580px;
+    overflow:scroll;
+}
+footer {
+    background-color: rgb(25, 43, 83);  
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
