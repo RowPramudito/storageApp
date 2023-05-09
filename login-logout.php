@@ -7,7 +7,7 @@ if($_SESSION['status'] == "login") {
     header("location:login_page.php?message=logout");
 }
 else{
-    $connect = new mysqli("localhost", "root", "", "storageApp");
+    require 'connector.php';
 
     $username = $_POST['username'];
     $password = $_POST['password'];

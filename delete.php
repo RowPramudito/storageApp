@@ -1,6 +1,6 @@
 <?php
 
-    $connect = new mysqli("localhost", "root", "", "storageApp");
+    require 'connector.php';
 
     $item_to_delete_id = $_GET['delete_item'];
 

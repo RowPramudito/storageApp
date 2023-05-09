@@ -196,7 +196,7 @@ Rowang Pramudito
                         <th>Action</th>
                     </tr>
                     <?php 
-                        $connect = new mysqli("localhost", "root", "", "storageApp");
+                        require 'connector.php';
 
                         if(empty($_GET['category'])) {
                             $query = mysqli_query($connect, "select * from inventory");

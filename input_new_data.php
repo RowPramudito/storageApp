@@ -1,6 +1,6 @@
 <?php
 
-    $connect = new mysqli("localhost", "root", "", "storageApp");
+    require 'connector.php';
 
     $item_code = $_POST['item_code'];
     $item_name = $_POST['item_name'];
