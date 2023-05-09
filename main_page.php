@@ -196,7 +196,7 @@ Rowang Pramudito
                         <th>Action</th>
                     </tr>
                     <?php 
-                        $connect = new mysqli("localhost", "root", "", "responsi");
+                        $connect = new mysqli("localhost", "root", "", "storageApp");
 
                         if(empty($_GET['category'])) {
                             $query = mysqli_query($connect, "select * from inventory");
@@ -306,7 +306,7 @@ Rowang Pramudito
                         <th colspan="2">Change Inventory Data</th>
                     </tr>
                     <?php 
-                        $connect = new mysqli("localhost", "root", "", "responsi");
+                        $connect = new mysqli("localhost", "root", "", "storageApp");
                         if(empty($_GET['id'])) {
                             header("location:main_page.php?view=all_list");
                         }
